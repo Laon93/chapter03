@@ -47,6 +47,21 @@ public class Song {
 		this.track = track;
 	}
 	
+	public Song()
+	{
+		
+	}
+	
+	//생성자를 하나라도 만들면 기본 생성자가 사라진다.
+	public Song(String title, String artist, String album, String composer, int year, int track)
+	{
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
 	public void show()
 	{
 		System.out.println(artist + " " + title + "( " + album + ", " + year + ", "
