@@ -6,4 +6,8 @@ public class Person {
 	protected int height;
 	int age;
 	private int e;
+	
+	public Person() {
+		System.out.println("Person 클래스 생성자가 호출");
+	}
 }
