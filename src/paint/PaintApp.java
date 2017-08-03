@@ -1,5 +1,6 @@
 package paint;
 
+
 public class PaintApp implements Resizeable {
 
 	public static void main(String[] args) {
