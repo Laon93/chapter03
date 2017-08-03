@@ -19,4 +19,9 @@ public class Student extends Person {
 	public Student() {
 		System.out.println("Student 클래스 생성자가 호출");
 	}
+	
+	public Student(String name) {
+		System.out.println("Student 클래스 생성자가 호출");
+		
+	}
 }
