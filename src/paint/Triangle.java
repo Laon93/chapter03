@@ -12,6 +12,17 @@ public class Triangle extends Shape {
 	public void draw() {
 		System.out.println( "삼각형을 그렸습니다." );
 	}
+
+	@Override
+	public int calcArea() {
+		return (x2-x1) * (y2-y3) / 2;
+	}
+
+	/*@Override
+	public void resize(double rate) {
+		// TODO Auto-generated method stub
+		
+	}*/
 	
 	
 }

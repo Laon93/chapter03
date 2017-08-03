@@ -1,13 +1,26 @@
 package paint;
 
-public class Shape {
+public abstract class Shape implements Drawable{
 	private String fillColor;
 	private String lineColor;
 	
-
-	
-	public void draw() {
-		System.out.println( "구체적인 도형을 그릴 수 없습니다." );
+	public String getFillColor() {
+		return fillColor;
 	}
+
+	public void setFillColor(String fillColor) {
+		this.fillColor = fillColor;
+	}
+
+	public String getLineColor() {
+		return lineColor;
+	}
+
+	public void setLineColor(String lineColor) {
+		this.lineColor = lineColor;
+	}
+	//draw를 인터페이스로 빼면서 필요없어진 코드ㄹ
+	//public abstract void draw(); 
 	
+	public abstract int calcArea();
 }
